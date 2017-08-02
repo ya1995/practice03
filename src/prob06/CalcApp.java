@@ -16,6 +16,47 @@ public class CalcApp {
 			if( "quit".equals( expression ) ) {
 				break;
 			}
+			
+			String[] tokens = expression.split( " " );
+			int a = Integer.parseInt( tokens[0] );
+			String operator = tokens[1];
+			int b = Integer.parseInt( tokens[2] );
+			
+			
+			switch( operator) {
+			case "+" : {
+				Add add = new Add();
+				add.setValue( a, b );
+				int result = add.calc();
+				
+				break;
+				}
+			case "-" : {
+				Sub sub = new Sub();
+				sub.setValue( a, b );
+				int result = sub.calc();
+				
+				break;
+			}
+			case "*" : {
+				Mul mul = new Mul();
+				mul.setValue( a, b );
+				int result = mul.calc();
+				
+				break;
+			}
+			case "/" : {
+				Div div = new Div();
+				div.setValue( a, b );
+				int result = div.calc();
+				
+				break;
+			}
+			
+			}
+			
+			
+			
 		}
 		
 		scanner.close();

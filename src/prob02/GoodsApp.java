@@ -9,6 +9,18 @@ public class GoodsApp {
 		Scanner scanner = new Scanner(System.in);
 
 		Goods[] goods = new Goods[COUNT_GOODS];
+		
+		for( int i=0; i<COUNT_GOODS; i++ ) {
+			String line = scanner.nextLine();
 
+			String[] tokens = line.split( " " );
+			
+			String name = tokens[0];
+			int price = Integer.parseInt( tokens[1] );
+			int count = Integer.parseInt( tokens[2] );
+			
+			System.out.println( name + ":" + price + ":" +  count );
+			
+		}
 	}
 }
