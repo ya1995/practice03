@@ -19,11 +19,9 @@ public class CalcApp {
 			
 			String[] tokens = expression.split( " " );
 			int a = Integer.parseInt( tokens[0] );
-			String operator = tokens[1];
 			int b = Integer.parseInt( tokens[2] );
 			
-			
-			switch( operator) {
+			switch( tokens[1] ) {
 			case "+" : {
 				Add add = new Add();
 				add.setValue( a, b );
