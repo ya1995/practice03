@@ -26,6 +26,7 @@ public class CalcApp {
 				Add add = new Add();
 				add.setValue( a, b );
 				int result = add.calc();
+				System.out.println( ">> " + result );
 				
 				break;
 				}
@@ -33,6 +34,7 @@ public class CalcApp {
 				Sub sub = new Sub();
 				sub.setValue( a, b );
 				int result = sub.calc();
+				System.out.println( ">> " + result );
 				
 				break;
 			}
@@ -40,6 +42,7 @@ public class CalcApp {
 				Mul mul = new Mul();
 				mul.setValue( a, b );
 				int result = mul.calc();
+				System.out.println( ">> " + result );
 				
 				break;
 			}
@@ -47,6 +50,7 @@ public class CalcApp {
 				Div div = new Div();
 				div.setValue( a, b );
 				int result = div.calc();
+				System.out.println( ">> " + result );
 				
 				break;
 			}
